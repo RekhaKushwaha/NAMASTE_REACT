@@ -1,39 +1,82 @@
-#container {
-  background-color: aqua;
-  width: 50%;
-  height: 50%;
-}
-#head1 {
-  color: blue;
-}
-#head2 {
-  color: brown;
-}
-
 .headerContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
-  background-color: lightslategray;
+  background-color: rgb(150, 206, 237);
   height: 50px;
   align-items: center;
   margin-top: 10px;
 }
 
 .logo {
-  width: 50%;
-  height: 50%;
+  width: 100px;
+  height: 78px;
 }
 
-.searchBar {
-  border: none;
-  height: 40px;
-  width: 900px;
-  border-radius: 2px;
+.nav-items > ul {
+  display: flex;
+  list-style-type: none;
 }
 
-.icon {
-   width: 50%;
-  height: 50%;
+.nav-items > ul > li {
+  padding-left: 15px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.footer > ul{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:50px;
+  background-color: rgb(150, 206, 237);
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer > ul >li{
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+.search-container >input{
+  width: 700px;
+  height: 30px;
+  font-size: 16px;
+  margin: 10px 0 10px 400px;
+} 
+
+.search-input{
+  padding-left: 10px;
+}
+
+.search-btn{
+  width: 100px;
+  height: 30px;
+  background-color: rgb(198, 237, 239);
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.card{
+  width: 300px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(218, 240, 243);
+
+}
+
+.card > img {
+  width: 100%;
+}
+
+.resturant-list{
+  display: flex;
+  flex-wrap: wrap;
 }
