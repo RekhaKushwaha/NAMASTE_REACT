@@ -19,9 +19,9 @@
   list-style-type: none;
 }
 
-.nav-items > ul > li {
+.nav-items>ul>li {
   padding-left: 15px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 100;
 }
 

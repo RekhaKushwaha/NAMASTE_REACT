@@ -1,6 +1,6 @@
 import { Component } from "react";
-import ProfileClass from "./profileClass";
-import ProfileFunctional from "./profileFunctional";
+import ProfileClass from "./ProfileClass";
+import ProfileFunctional from "./ProfileFunctional";
 
 class About extends Component {
   constructor(props) {

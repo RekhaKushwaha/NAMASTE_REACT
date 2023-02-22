@@ -21,14 +21,21 @@ class Profile extends React.Component{
             userInfo : json,
         });
         console.log(" child - componentDidMount" + this.props.name);
+        this.timer = setInterval(()=>{
+            console.log("interval set");
+        },1000);
     }
     
     //after first render componentDidUpdate will call after every render
-    componentDidUpdate(){
+    componentDidUpdate(prevProps, prevState){
+        if(this.state.count !== prevState.count){
+            //update count logic
+        }
         console.log("child - componentDidUpdate");
     }
 
     componentWillUnmount(){
+        clearInterval(this.timer);
         console.log("child - componentWillUnmount");
     }
     //most imp. method in class based component (mandatory method render())
